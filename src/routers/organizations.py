@@ -1,7 +1,6 @@
 from ..utils.organizationMockData import organizations;
 from ..utils.constants import ORGANIZATION_NOT_FOUND;
 from fastapi import APIRouter, Depends;
-from fastapi.responses import JSONResponse;
 from ..dtos.organizations import OrganizationCreateDTO, OrganizationDTO;
 from ..controllers.orgranizations import get_all_organizations, add_organization, get_organization_by_id, delete_organization_by_id, update_organization_by_id;
 from ..utils.db import get_db;
