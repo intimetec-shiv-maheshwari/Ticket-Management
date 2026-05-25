@@ -1,1 +1,7 @@
 ORGANIZATION_NOT_FOUND = "Organization not found"
+USER_NOT_FOUND = "User not found"
+INVALID_CREDENTIALS = "Invalid email or password"
+USER_INACTIVE = "User account is inactive"
+USERS_NOT_FOUND_FOR_ORGANIZATION = "No users found for the organization"
+ROLE_NOT_FOUND = "Role not found"
+ROLES_NOT_FOUND_FOR_ORGANIZATION = "No roles found for the organization"

@@ -1,0 +1,33 @@
+# Database migrations (Alembic)
+
+Uses `DATABASE_URL` from `.env` (same as the FastAPI app).
+
+## After you change a model (`src/models/*.py`)
+
+```powershell
+# From project root, with venv active:
+alembic revision --autogenerate -m "describe your change"
+# Review the new file in alembic/versions/
+alembic upgrade head
+```
+
+## Common commands
+
+| Command | Purpose |
+|---------|---------|
+| `alembic current` | Show applied revision |
+| `alembic history` | List all migrations |
+| `alembic upgrade head` | Apply pending migrations |
+| `alembic downgrade -1` | Undo last migration |
+
+## New empty database
+
+```powershell
+alembic upgrade head
+```
+
+This applies all migrations and creates tables. You can rely on this instead of `init_db()` for schema setup.
+
+## Existing database (already has tables)
+
+If `upgrade head` says there is nothing to run, your DB is already at the latest revision.

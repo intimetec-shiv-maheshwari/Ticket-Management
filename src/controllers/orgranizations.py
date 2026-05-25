@@ -36,6 +36,7 @@ def update_organization_by_id(organization_id: str, organization: OrganizationCr
     org.name = organization.name;
     org.description = organization.description;
     org.country = organization.country;
+    org.active = organization.active;
     db.commit();
     db.refresh(org);
     return org;
