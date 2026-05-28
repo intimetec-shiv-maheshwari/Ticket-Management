@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends;
 
-from ..controllers.roles import (
+from ..services.roles import (
     add_role,
     delete_role_by_id,
     get_all_roles,
