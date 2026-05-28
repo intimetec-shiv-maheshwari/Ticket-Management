@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends;
 
-from ..controllers.tickets import (
+from ..services.tickets import (
     add_ticket,
     delete_ticket_by_id,
     get_all_tickets,

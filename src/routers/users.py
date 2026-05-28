@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends;
 
-from ..controllers.users import (
+from ..services.users import (
     add_user,
     delete_user_by_id,
     get_all_users,
