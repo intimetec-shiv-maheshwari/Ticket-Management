@@ -9,7 +9,14 @@ from alembic import context
 # Project root on sys.path (alembic.ini prepend_sys_path = .)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.models import Organization, Roles, Users  # noqa: F401
+from src.models import (  # noqa: F401
+    Organization,
+    Roles,
+    Ticket,
+    TicketPriority,
+    TicketStatus,
+    Users,
+)
 from src.utils.db import Base
 from src.utils.settings import settings
 
